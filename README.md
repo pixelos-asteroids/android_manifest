@@ -1,18 +1,19 @@
-mkdir PixelOS && cd PixelOS
+mkdir VoltageOS && cd VoltageOS
 
-repo init -u https://github.com/PixelOS-AOSP/manifest.git -b fifteen --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 16 --git-lfs
 
-mkdir .repo/local_manifests && wget https://raw.githubusercontent.com/pixelos-oneplus9-series/manifest/main/OnePlus9Series.xml -O .repo/local_manifests/OnePlus9Series.xml
+mkdir .repo/local_manifests && wget https://raw.githubusercontent.com/voltageos-oneplus9/manifest/16/OnePlus9Series.xml -O .repo/local_manifests/OnePlus9Series.xml
 
-repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+repo sync
 
 #To build for OnePlus 9 Pro aka lemonadep
 
-lunch aosp_lemonadep-bp1a-user
+. build/envsetup.sh
+
+brunch lemonadep
 
 #To build for OnePlus 9 aka lemonade
 
-lunch aosp_lemonade-bp1a-user
+. build/envsetup.sh
 
-#start Compilation
-mka bacon  -j$(nproc --all)
+brunch lemonade
