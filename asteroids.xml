@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote name="github-https"
+            fetch="https://github.com/pixelos-asteroids/"
+            sync-c="true"
+            sync-tags="false"
+            revision="sixteen-qpr1" />
+
+    <!-- Device Tree -->
+    <project name="android_device_nothing_asteroids"
+             path="device/nothing/asteroids"
+             remote="github-https" />
+
+    <!-- Kernel Source -->
+    <project name="android_kernel_nothing_sm7635"
+             path="kernel/nothing/sm7635"
+             remote="github-https" />
+
+    <!-- Kernel Modules -->
+    <project name="android_kernel_nothing_sm7635-modules"
+             path="kernel/nothing/sm7635-modules"
+             remote="github-https" />
+
+    <!-- Kernel Device Trees -->
+    <project name="android_kernel_nothing_sm7635-devicetrees"
+             path="kernel/nothing/sm7635-devicetrees"
+             remote="github-https" />
+
+    <!-- Vendor Files -->
+    <project name="proprietary_vendor_nothing_asteroids"
+             path="vendor/nothing/asteroids"
+             remote="github-https" />
+
+    <!-- Nothing / Glyph Apps -->
+    <project name="packages_apps_ParanoidGlyph"
+             path="packages/apps/ParanoidGlyph"
+             remote="github-https" />
+
+    <project name="packages_apps_GlyphAdapter"
+             path="packages/apps/GlyphAdapter"
+             remote="github-https" />
+
+    <!-- Hardware Features -->
+    <project name="hardware_dolby"
+             path="hardware/dolby"
+             remote="github-https" />
+
+</manifest>

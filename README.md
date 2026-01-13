@@ -1,11 +1,11 @@
 
-# ⚡ VoltageOS
+# ⚡ PixelOS For Asteroids
 
-[![Repo Size](https://img.shields.io/github/repo-size/VoltageOS/manifest?style=for-the-badge)](https://github.com/VoltageOS/manifest)
-[![License](https://img.shields.io/github/license/VoltageOS/manifest?style=for-the-badge)](https://github.com/VoltageOS/manifest/blob/master/LICENSE)
+[![Repo Size](https://img.shields.io/github/repo-size/pixelos-asteroids/android_manifest?style=for-the-badge)](https://github.com/pixelos-asteroids/android_manifest)
+[![License](https://img.shields.io/github/license/pixelos-asteroids/android_manifest?style=for-the-badge)](https://github.com/pixelos-asteroids/android_manifest/blob/master/LICENSE)
 
-VoltageOS is a custom Android ROM for **OnePlus 9 series** devices.  
-This guide will help you **set up, sync, and build VoltageOS** like a pro developer.  
+PixelOS is a custom Android ROM which bring pixel features on non pixel devices.  
+This guide will help you **set up, sync, and build PixelOS** for **Nothing 3A / PRO**.  
 
 ---
 
@@ -21,29 +21,29 @@ This guide will help you **set up, sync, and build VoltageOS** like a pro develo
 ## 🛠️ Prerequisites
 Make sure your system has the following installed:
 
-- Linux/macOS with required build tools  
+- Linux with required build tools  
 - `repo` tool  
 - `git-lfs`  
-- Adequate storage (~100GB free recommended)  
+- Adequate storage (~400GB free recommended)  
 
 ---
 
 ## 📂 Setup Repository
-Clone and initialize the VoltageOS repository:
+Clone and initialize the PixelOS repository:
 
 ```bash
-mkdir VoltageOS && cd VoltageOS
-repo init -u https://github.com/VoltageOS/manifest.git -b 16 --git-lfs
+mkdir PixelOS && cd PixelOS
+repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr1 --git-lfs
 ```
 
 ---
 
 ## 🔄 Sync Local Manifests
-Add device-specific manifest for OnePlus 9 series:
+Add device-specific manifest for Nothing 3A / Pro AKA asteroids:
 
 ```bash
 mkdir -p .repo/local_manifests
-wget https://raw.githubusercontent.com/voltageos-oneplus9/manifest/16/OnePlus9Series.xml      -O .repo/local_manifests/OnePlus9Series.xml
+wget https://raw.githubusercontent.com/pixelos-asteroids/android_manifest/sixteen-qpr1/asteroids.xml      -O .repo/local_manifests/asteroids.xml
 ```
 
 Sync the repository:
@@ -56,26 +56,22 @@ repo sync
 
 ## 🏗️ Build Instructions
 
-### OnePlus 9 Pro (`lemonadep`)
+### Nothing 3A / PRO (asteroids`)
 ```bash
 . build/envsetup.sh
-brunch lemonadep
-```
-
-### OnePlus 9 (`lemonade`)
-```bash
-. build/envsetup.sh
-brunch lemonade
+breakfast asteroids
+m pixelos
 ```
 
 ---
 
 ## 💡 Tips & Notes
 - Run `source build/envsetup.sh` before building.  
-- Use `brunch <device>` to build a full system image.  
-- Ensure all dependencies are installed to avoid build errors.  
-- Check `out/target/product/<device>/` for compiled images.  
+- If you face ABI_Check issue run below command
+```bash
+export SKIP_ABI_CHECKS=true
+```  
 
 ---
 
-Maintained with ❤️ by the **Absolute N00b**
+Maintained with ❤️ by the **Absolute N00b (Binaryninja01)** 
