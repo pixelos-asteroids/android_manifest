@@ -72,6 +72,4 @@ m pixelos
 export SKIP_ABI_CHECKS=true
 ```  
 
----
-
-Maintained with ❤️ by the **Absolute N00b (Binaryninja01)** 
+--- 
