@@ -5,7 +5,7 @@
             fetch="https://github.com/pixelos-asteroids/"
             sync-c="true"
             sync-tags="false"
-            revision="sixteen-QPR1" />
+            revision="sixteen-QPR2" />
 
     <!-- Device Tree -->
     <project name="android_device_nothing_asteroids"
