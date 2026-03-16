@@ -5,7 +5,7 @@
             fetch="https://github.com/pixelos-asteroids/"
             sync-c="true"
             sync-tags="false"
-            revision="sixteen-QPR1" />
+            revision="sixteen-qpr1" />
 
     <!-- Device Tree -->
     <project name="android_device_nothing_asteroids"
@@ -45,6 +45,6 @@
     <project name="hardware_dolby"
              path="hardware/dolby"
              remote="github-https"
-             revision="pixelos-dolby"/>
+             revision="dolby"/>
 
 </manifest>
