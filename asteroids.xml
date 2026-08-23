@@ -1,50 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remote name="github-https"
+    <remote name="dt"
             fetch="https://github.com/pixelos-asteroids/"
             sync-c="true"
             sync-tags="false"
-            revision="sixteen-qpr2" />
+            revision="seventeen" />
+
+    <remote name="dt-gl" 
+            fetch="https://gitlab.com/pixelos-asteroids/"
+            sync-c="true"
+            sync-tags="false"
+            revision="seventeen" />
 
     <!-- Device Tree -->
     <project name="android_device_nothing_asteroids"
              path="device/nothing/asteroids"
-             remote="github-https" />
+             remote="dt" />
 
     <!-- Kernel Source -->
     <project name="android_kernel_nothing_sm7635"
              path="kernel/nothing/sm7635"
-             remote="github-https" />
+             remote="dt" />
 
     <!-- Kernel Modules -->
     <project name="android_kernel_nothing_sm7635-modules"
              path="kernel/nothing/sm7635-modules"
-             remote="github-https" />
+             remote="dt" />
 
     <!-- Kernel Device Trees -->
     <project name="android_kernel_nothing_sm7635-devicetrees"
              path="kernel/nothing/sm7635-devicetrees"
-             remote="github-https" />
+             remote="dt" />
 
     <!-- Vendor Files -->
     <project name="proprietary_vendor_nothing_asteroids"
              path="vendor/nothing/asteroids"
-             remote="github-https" />
+             remote="dt-gl" />
 
     <!-- Nothing / Glyph Apps -->
     <project name="packages_apps_ParanoidGlyph"
              path="packages/apps/ParanoidGlyph"
-             remote="github-https" />
+             remote="dt" />
 
     <project name="packages_apps_GlyphAdapter"
              path="packages/apps/GlyphAdapter"
-             remote="github-https" />
+             remote="dt" />
 
     <!-- Hardware Features -->
     <project name="hardware_dolby"
              path="hardware/dolby"
-             remote="github-https"
-             revision="dolby"/>
+             remote="dt" />
+
+    <project name="android_hardware_nothing" 
+             path="hardware/nothing" 
+             remote="dt"/>
 
 </manifest>
