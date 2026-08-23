@@ -43,7 +43,7 @@ Add device-specific manifest for Nothing 3A / Pro AKA asteroids:
 
 ```bash
 mkdir -p .repo/local_manifests
-wget https://raw.githubusercontent.com/pixelos-asteroids/android_manifest/seventeen/asteroids.xml      -O .repo/local_manifests/asteroids.xml
+wget  https://raw.githubusercontent.com/pixelos-asteroids/android_manifest/refs/heads/seventeen/asteroids.xml     -O .repo/local_manifests/asteroids.xml
 ```
 
 Sync the repository:
