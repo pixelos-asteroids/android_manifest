@@ -1,9 +1,6 @@
 
 # ⚡ PixelOS For Asteroids
 
-[![Repo Size](https://img.shields.io/github/repo-size/pixelos-asteroids/android_manifest?style=for-the-badge)](https://github.com/pixelos-asteroids/android_manifest)
-[![License](https://img.shields.io/github/license/pixelos-asteroids/android_manifest?style=for-the-badge)](https://github.com/pixelos-asteroids/android_manifest/blob/master/LICENSE)
-
 PixelOS is a custom Android ROM which bring pixel features on non pixel devices.  
 This guide will help you **set up, sync, and build PixelOS** for **Nothing 3A / PRO**.  
 
