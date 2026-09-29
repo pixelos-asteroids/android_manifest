@@ -53,10 +53,10 @@ repo sync
 
 ## 🏗️ Build Instructions
 
-### Nothing 3A / PRO (asteroids`)
+### Nothing 3A / PRO (asteroids)
 ```bash
 . build/envsetup.sh
-breakfast asteroids
+breakfast asteroids user
 m pixelos
 ```
 
