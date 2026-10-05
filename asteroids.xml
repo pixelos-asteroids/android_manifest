@@ -38,16 +38,7 @@
              path="vendor/nothing/asteroids"
              remote="dt-gl" />
 
-    <!-- Nothing / Glyph Apps -->
-    <project name="packages_apps_ParanoidGlyph"
-             path="packages/apps/ParanoidGlyph"
-             remote="dt" />
-
-    <project name="packages_apps_GlyphAdapter"
-             path="packages/apps/GlyphAdapter"
-             remote="dt" />
-
-    <!-- Hardware Features -->
+    <!-- Hardware Features (Including Glyph apps in hardware_nothing) -->
     <project name="hardware_dolby"
              path="hardware/dolby"
              remote="dt" />
